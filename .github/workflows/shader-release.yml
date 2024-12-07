@@ -57,3 +57,4 @@ jobs:
           files: Chrono.zip  # 上传打包的 Chrono.zip 文件到 GitHub Release
           tag_name: release-${{ github.sha }}  # 使用我们创建的标签名
           token: ${{ secrets.GITHUB_TOKEN }}  # 使用 GitHub 提供的 token 进行身份验证
+          prerelease: true  # 设置为 pre-release
